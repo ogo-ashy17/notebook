@@ -1,0 +1,32 @@
+version: 1
+formatters:
+  basic:
+    format: '[%(asctime)s] [%(levelname)s] [%(filename)s:%(lineno)s] %(message)s'
+handlers:
+  mainfile1:
+    class: logging.FileHandler
+    level: INFO
+    filename: 'main1.log'
+    formatter: basic
+  mainfile2:
+    class: logging.FileHandler
+    level: DEBUG
+    filename: 'main2.log'
+    formatter: basic
+  mymodulefile1:
+    class: logging.FileHandler
+    level: INFO
+    filename: 'mymodule1.log'
+    formatter: basic
+  mymodulefile2:
+    class: logging.FileHandler
+    level: DEBUG
+    filename: 'mymodule2.log'
+    formatter: basic
+loggers:
+  __main__:
+    level: DEBUG
+    handlers: [mainfile1, mainfile2]
+  mymodule:
+    level: DEBUG
+    handlers: [mymodulefile1, mymodulefile2]

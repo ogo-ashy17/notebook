@@ -1,15 +1,16 @@
-from logging import getLogger, basicConfig, FileHandler, Formatter, DEBUG, INFO
+# 設定メソッドを使用してLogger, Handler, Formatterを制御する
+from logging import getLogger, FileHandler, Formatter, DEBUG, INFO
 from mymodule import test_func1, test_func2, culc_div
 
 def main():
     try:
         logger = getLogger(__name__)
         logger.setLevel(DEBUG)
-        # basicConfig(filename='./example.log', encoding='utf-8', level=DEBUG)
 
         fh_formatter = Formatter('[%(asctime)s] [%(levelname)s] [%(filename)s:%(lineno)s] %(message)s')
 
         # FileHandlerの設定
+        # FileHandlerを2つ設定することで、ログレベルに応じてファイルを分けることができる
         fh1 = FileHandler('./main1.log')
         fh1.setLevel(INFO)
         fh1.setFormatter(fh_formatter)

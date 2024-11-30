@@ -1,0 +1,11 @@
+[2024-11-30 17:19:39,903] [INFO] [main.py:25] So should this
+[2024-11-30 17:19:39,903] [WARNING] [main.py:26] And this, too
+[2024-11-30 17:19:39,903] [ERROR] [main.py:27] And non-ASCII stuff, too, like Øresund and Malmö
+[2024-11-30 17:19:39,906] [ERROR] [main.py:36] mainでエラーを捕捉した!
+Traceback (most recent call last):
+  File "/Users/dgmr2/programming/debugger/Notebook/logger/introduction/main.py", line 32, in main
+    result = culc_div(1, 0)
+  File "/Users/dgmr2/programming/debugger/Notebook/logger/introduction/mymodule.py", line 36, in culc_div
+    result = num1 / num2
+             ~~~~~^~~~~~
+ZeroDivisionError: division by zero

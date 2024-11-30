@@ -1,20 +1,8 @@
-from logging import getLogger, basicConfig, FileHandler, Formatter, DEBUG, INFO
+from logging import getLogger, config
+import yaml
 
+config.dictConfig(yaml.safe_load(open('./config.yml').read()))
 logger = getLogger(__name__)
-logger.setLevel(DEBUG)
-
-fh_formatter = Formatter('[%(asctime)s] [%(levelname)s] [%(filename)s:%(lineno)s] %(message)s')
-
-# FileHandlerの設定
-fh1 = FileHandler('./mymodule1.log')
-fh1.setLevel(INFO)
-fh1.setFormatter(fh_formatter)
-logger.addHandler(fh1)
-
-fh2 = FileHandler('./mymodule2.log')
-fh2.setLevel(DEBUG)
-fh2.setFormatter(fh_formatter)
-logger.addHandler(fh2)
 
 def test_func1():
     logger.info('This is test_func1')
