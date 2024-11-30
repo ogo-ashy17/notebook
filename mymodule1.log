@@ -1,7 +1,0 @@
-[2024-11-30 14:38:20,264] [INFO] [mymodule.py:20] This is test_func1
-[2024-11-30 14:38:20,264] [INFO] [mymodule.py:26] This is test_func2
-[2024-11-30 14:38:20,264] [ERROR] [mymodule.py:39] エラー!
-Traceback (most recent call last):
-  File "/Users/dgmr2/programming/debugger/Notebook/logger/mymodule.py", line 35, in culc_div
-    result = num1 / num2
-ZeroDivisionError: division by zero

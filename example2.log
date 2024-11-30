@@ -1,4 +1,0 @@
-[2024-11-30 13:54:23,200] [DEBUG] [main.py:20] This message should go to the log file
-[2024-11-30 13:54:23,201] [INFO] [main.py:21] So should this
-[2024-11-30 13:54:23,201] [WARNING] [main.py:22] And this, too
-[2024-11-30 13:54:23,201] [ERROR] [main.py:23] And non-ASCII stuff, too, like Øresund and Malmö
