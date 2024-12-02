@@ -1,3 +1,5 @@
 .DS_Store
 introduction-to-falsk/.venv
 introduction-to-falsk/.vscode
+introduction-to-falsk/apps/minimalapp/__pycache__
+introduction-to-falsk/apps/minimalapp/.env
