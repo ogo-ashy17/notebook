@@ -7,6 +7,8 @@ def index():
     return "Hello, Flaskbook! degbug mode on ファイルを保存して再読み込みしないと画面に反映されない。せめて保存したら自動で読みんで欲しいものだが。"
 
 # ルーティング：リクエスト先のURIと関数を紐づける
-@app.route("/hello")
-def hello():
-    return "Hello, World!"
+@app.route("/hello/<int:name>",
+           methods=["GET", "POST"],
+           endpoint="hello-endpoint")
+def hello(name):
+    return f"Hello, {name}!"
