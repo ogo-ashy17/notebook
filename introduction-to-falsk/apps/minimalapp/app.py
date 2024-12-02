@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -12,3 +12,9 @@ def index():
            endpoint="hello-endpoint")
 def hello(name):
     return f"Hello, {name}!"
+
+# show_nameエンドポイントを作成する
+@app.route("/name/<name>")
+def show_name(name):
+    # 変数をテンプレートエンジンに渡す
+    return render_template("index.html", name=name)
