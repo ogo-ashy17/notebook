@@ -1,3 +1,5 @@
+# introduction-to-flask
 .DS_Store
 introduction-to-flask/.venv
 introduction-to-flask/.env
+introduction-to-flask/apps/minimalapp/__pycache__
