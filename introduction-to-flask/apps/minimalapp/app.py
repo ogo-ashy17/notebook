@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, request, redirect, current_app, g
 
 app = Flask(__name__)
 
@@ -27,4 +27,16 @@ with app.test_request_context():
     # /name/ichiro?page=1
     print(url_for("show_name", name="ichiro", page="1"))
 
-#ab
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
+
+@app.route("/contact/complete", methods=["GET", "POST"])
+def contact_complete():
+    if request.method == "POST":
+        # メールを送る（最後に実装）
+
+        # contactエンドポイントへリダイレクトする
+        return redirect(url_for("contact_complete"))
+    
+    return render_template("contact_complete.html")
