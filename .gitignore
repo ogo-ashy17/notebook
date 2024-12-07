@@ -3,3 +3,6 @@
 introduction-to-flask/.venv
 introduction-to-flask/.env
 introduction-to-flask/apps/minimalapp/__pycache__
+
+# pytorch
+pytorch/pytorch-tutorial/Quickstart/data
