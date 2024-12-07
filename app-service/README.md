@@ -1,10 +1,8 @@
-**App Service の概要**  
-https://learn.microsoft.com/ja-jp/azure/app-service/overview
+[**App Service の概要**](https://learn.microsoft.com/ja-jp/azure/app-service/overview)
 
-**Azure コンピューティング サービスを選択する**  
-https://learn.microsoft.com/ja-jp/azure/architecture/guide/technology-choices/compute-decision-tree
+[**Azure コンピューティング サービスを選択する**](https://learn.microsoft.com/ja-jp/azure/architecture/guide/technology-choices/compute-decision-tree)
 
-**クイック スタート: Python (Django、Flask、または FastAPI) Web アプリを Azure App Service にデプロイする**(https://learn.microsoft.com/ja-jp/azure/app-service/quickstart-python?tabs=flask%2Cmac-linux%2Cazure-cli%2Cazure-cli-deploy%2Cdeploy-instructions-azportal%2Cterminal-bash%2Cdeploy-instructions-zip-azcli)
+[**クイック スタート: Python (Django、Flask、または FastAPI) Web アプリを Azure App Service にデプロイする**](https://learn.microsoft.com/ja-jp/azure/app-service/quickstart-python?tabs=flask%2Cmac-linux%2Cazure-cli%2Cazure-cli-deploy%2Cdeploy-instructions-azportal%2Cterminal-bash%2Cdeploy-instructions-zip-azcli)
 
 # Deploy a Python (Flask) web app to Azure App Service - Sample Application
 
