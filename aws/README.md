@@ -1,1 +1,1 @@
-Amazon SageMaker 推論 Part2すぐにプロダクション利用できる！モデルをデプロイして推論する方法[https://d1.awsstatic.com/webinars/jp/pdf/services/202208_AWS_Black_Belt_AWS_AIML_Dark_04_inference_part2.pdf]
+[Amazon SageMaker 推論 Part2すぐにプロダクション利用できる！モデルをデプロイして推論する方法](https://d1.awsstatic.com/webinars/jp/pdf/services/202208_AWS_Black_Belt_AWS_AIML_Dark_04_inference_part2.pdf)
