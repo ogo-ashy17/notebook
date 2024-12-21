@@ -8,4 +8,4 @@ introduction-to-flask/apps/minimalapp/__pycache__
 pytorch/pytorch-tutorial/Quickstart/data
 
 # azure app service
-app-service/.venv
+azure/app-service/.venv
