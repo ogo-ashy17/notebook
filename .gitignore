@@ -9,3 +9,16 @@ pytorch/pytorch-tutorial/Quickstart/data
 
 # azure app service
 azure/app-service/.venv
+
+# azureml
+azure/azureml/config.json
+azure/azureml/.venv
+azure/azureml/iris-notebook.ipynb
+azure/azureml/poetry.lock
+azure/azureml/pyproject.toml
+azure/azureml/submit-training-job/iris
+
+# tensorflow
+tensorflow/.venv
+tensorflow/poetry.lock
+tensorflow/pyproject.toml
