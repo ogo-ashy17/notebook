@@ -32,12 +32,19 @@ def run(data):
             # ランダムフォレスト
             predict_result = g_model.predict(df.drop('target', axis=1))
             df['pred'] = predict_result
+            print('df.shape:', df.shape)
+            print('df.clumns:', len(df.columns))
+            print(pd.DataFrame(data=[df.columns], columns=df.columns))
 
             print('confusion matrix')
             print(confusion_matrix(df['target'], predict_result))
 
+            df = pd.concat([pd.DataFrame(data=[df.columns], columns=df.columns), df], ignore_index=True)
+
+
         except Exception as e:
             raise e
     
-    return df
+    # return df
+    return pd.DataFrame(data=[df.columns], columns=df.columns)
 

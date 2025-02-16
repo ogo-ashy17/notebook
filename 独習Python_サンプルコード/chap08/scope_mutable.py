@@ -1,6 +1,7 @@
 def param_update(data):
+  # data[0] = 55
+  data = [10, 20, 30]
   data[0] = 55
-  # data = [10, 20, 30]
   return data
 
 data = [2, 4, 6]

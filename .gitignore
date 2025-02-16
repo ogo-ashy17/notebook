@@ -22,3 +22,9 @@ azure/azureml/submit-training-job/iris
 tensorflow/.venv
 tensorflow/poetry.lock
 tensorflow/pyproject.toml
+
+# streamlit
+streamlit/.venv
+
+# 独習Python_サンプルコード
+独習Python_サンプルコード

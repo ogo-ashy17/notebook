@@ -1,10 +1,10 @@
 data = 'global'
 
 def outer():
-  data = 'outer'
+  # data = 'outer'
 
   def inner():
-    data = 'inner'
+    # data = 'inner'
     return data
   
   return inner()
