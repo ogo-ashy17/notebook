@@ -1,3 +1,13 @@
+__pycache__/
+.venv/
+.vscode/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.lock
+*.toml
+
 # introduction-to-flask
 .DS_Store
 introduction-to-flask/.venv
@@ -8,23 +18,15 @@ introduction-to-flask/apps/minimalapp/__pycache__
 pytorch/pytorch-tutorial/Quickstart/data
 
 # azure app service
-azure/app-service/.venv
 
 # azureml
 azure/azureml/config.json
-azure/azureml/.venv
 azure/azureml/iris-notebook.ipynb
-azure/azureml/poetry.lock
-azure/azureml/pyproject.toml
 azure/azureml/submit-training-job/iris
 
 # tensorflow
-tensorflow/.venv
-tensorflow/poetry.lock
-tensorflow/pyproject.toml
 
 # streamlit
-streamlit/.venv
 
 # 独習Python_サンプルコード
 独習Python_サンプルコード
