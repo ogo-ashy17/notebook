@@ -1,24 +1,35 @@
-# from openai import OpenAI
 import streamlit as st
+import random
+import time
 
+st.title("Simple chat")
 
-st.title('🥺Chatbot')
-st.caption('This is a simple Streamlit app.')
-if 'messaghes' not in st.session_state:
-    st.session_state['messages'] = [{'role': 'assistant', 'content': 'How can I help you?'}]
+def response_generator():
+    response = random.choice(
+        [
+            "Hello there! How can I assist you today?",
+            "Hi, human! Is there anything I can help you with?",
+            "Do you need help?",
+        ]
+    )
+    for word in response.split():
+        yield word + " "
+        time.sleep(0.05)
 
-# for msg in st.session_state.messages:
-#     st.chat_message(msg['role']).write(msg['content'])
+if 'messages' not in st.session_state:
+    st.session_state.messages = []
 
-if prompt := st.chat_input():
-    # if not openai_api_key:
-    #     st.info('Please set your OpenAI API key in the sidebar.')
-    #     st.stop()
+for message in st.session_state.messages:
+    with st.chat_message(message['role']):
+        st.markdown(message['content'])
 
-    # client = OpenAI(api_key=openai_api_key)
+if prompt := st.chat_input('What is up?'):
+    with st.chat_message('user'):
+        st.markdown(prompt)
+
     st.session_state.messages.append({'role': 'user', 'content': prompt})
-    st.chat_message('user').write(prompt)
-    # response = client.chat.competions.create(model='gpt-3.5-tarbo', messages=st.session_state.messages)
-    # msg = response.choices[0].message.content
-    st.session_state.messages.append({'role': 'assistant',  'content': msg})
-    st.chat_message('assistant').write(msg)
+
+    with st.chat_message('assistant'):
+        response = st.write_stream(response_generator())
+
+    st.session_state.messages.append({'role': 'assistant', 'content': response})
