@@ -1,3 +1,5 @@
+import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 import streamlit as st
 
@@ -43,3 +45,8 @@ options = st.multiselect(
     ['Option 1', 'Option 2', 'Option 3'],
     ['Option 1', 'Option 2']
 )
+
+arr = np.random.normal(1, 1, size=100)
+fig, ax = plt.subplots()
+ax.hist(arr, bins=20)
+st.pyplot(fig)
